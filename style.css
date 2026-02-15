@@ -1,0 +1,180 @@
+body {
+  background: #101a70;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 18px;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #020617;
+  border-radius: 12px;
+}
+
+.fname {
+  color: #f8cf38;
+  font-size: 18px;
+}
+
+.lname {
+  color: #94a3b8;
+}
+
+.bio {
+  background: #8e5e04;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.webDiv {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+.swiper-slide {
+  background: #020617;
+  border-radius: 12px;
+  overflow: hidden; 
+}
+.swiper-slide img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40%;
+  color: #fff;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+
+
+#categoriy{
+    width:150px;
+  height: 50px;
+  background: linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
+  background-size: 200% 200%;
+  background-position: left;
+  transition: background-position 0.6s ease;
+  border-radius: 10px;
+  font-size: 20px; 
+
+}
+
+#sort{
+  width: 150px;
+  height: 50px;
+  background: linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
+  background-size: 200% 200%;
+  background-position: left;
+  transition: background-position 0.6s ease; 
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+  #categoriy p{
+    color: #fff;
+  }
+
+  #min{
+  width: 150px;
+  height: 50px;
+  background: linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
+  background-size: 200% 200%;
+  background-position: left;
+  transition: background-position 0.6s ease; 
+  border-radius: 10px;
+  font-size: 20px;
+  }
+  #max{
+  width: 150px;
+  height: 50px;
+  background: (rgb(39, 60, 177));
+  background-size: 200% 200%;
+  background-position: left;
+  transition: background-position 0.6s ease; 
+  border-radius: 10px;
+  font-size: 20px;
+  
+  }
+  
+
+  .headerslide{
+  height: 100px;
+  background: linear-gradient(rgb(39, 60, 177), rgba(255, 255, 255, 0.762), rgb(39, 60, 177));
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  }
+
+  .purchaseimg{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+  }
+
+  .navlink{
+    display: inline;
+    color: #020617;
+    margin-top: 45px;
+    margin-right: 200px;
+  }
+
+  .localstorage{
+    background: linear-gradient(rgb(7, 7, 114),     rgb(7, 7, 114) );
+    border-radius: 10px;
+    border:none; 
+    ;
+    width: 300px;
+    height: 50px;
+    font-family:Arial, sans-serif;
+    font-size: 30px;
+    color: #717171;
+
+  }
+
+  .localstorage:hover{
+    background: linear-gradient(rgb(7, 7, 114),  rgb(0, 0, 255),  rgb(102, 0, 255));
+  }
+
+  body {
+  background: linear-gradient(-45deg, #002fff, #ffffff, #0040ff, #04ff53);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite;
+
+}
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+
+
+
