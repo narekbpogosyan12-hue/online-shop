@@ -80,14 +80,53 @@ new Swiper(".mySwiper", {
 //   loqalData.push(products)
 //   localStorage.setItem('cart', JSON.stringify(loqalData))
 // }
-
 function handleAddProduct(id) {
-  console.log(id);
-  
-  let product = allProducts.find(elem => elem.id == id)
-  let localData = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
-  localData.push(product)
 
-  localStorage.setItem('cart',JSON.stringify(localData))}   
+  let product = allProducts.find(elem => elem.id == id);
+
+  let localData = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let existingProduct = localData.find(elem => elem.id == id);
+
+  if (existingProduct) {
+    existingProduct.count += 1;
+  } else {
+    product.count = 1;
+    localData.push(product);
+  }
+
+  localStorage.setItem("cart", JSON.stringify(localData));
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+cartProductsDiv.innerHTML = "";
+
+cart.forEach(product => {
+  cartProductsDiv.innerHTML += `
+    <div class="nkarneriDiver2">
+      <img src="${product.image}" class="himnakanPicturNer2">
+
+      <p class="text14-2 text15-2">
+        ${product.title}  x${product.count}
+      </p>
+
+      <p class="text14-2 text17-2">
+        ${product.price * product.count}$
+        <span class="gniKoxiBary2">${product.category}</span>
+      </p>
+
+      <img src="3917759.png" class="delete1">
+    </div>`;
+});
+}
+
+
+// let basket = document.querySelector(".purchaseimg")
+// let divCard = document.querySelector(".cardTitleDiv")
+// let closev = documen.querySelector(".close")
+
+// basket.onclick = function () {
   
+// }
+
 
