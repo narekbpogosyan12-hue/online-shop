@@ -105,7 +105,7 @@ cart.forEach(product => {
   cartProductsDiv.innerHTML += `
     <div class="nkarneriDiver2">
       <img src="${product.image}" class="himnakanPicturNer2">
-
+    
       <p class="text14-2 text15-2">
         ${product.title}  x${product.count}
       </p>
@@ -120,13 +120,5 @@ cart.forEach(product => {
 });
 }
 
-
-// let basket = document.querySelector(".purchaseimg")
-// let divCard = document.querySelector(".cardTitleDiv")
-// let closev = documen.querySelector(".close")
-
-// basket.onclick = function () {
-  
-// }
 
 

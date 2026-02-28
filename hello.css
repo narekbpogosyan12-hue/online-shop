@@ -120,3 +120,59 @@
 .AddToCardEj {
     display: none; 
 }
+
+.miusPlus {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(28, 18, 94);
+    border-radius: 5px;
+    position: relative;
+    margin-left: 300px; 
+    font-size: 25px;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minus {
+    width: 40px;
+    height: 30px;
+    background-color: rgb(120, 20, 20);
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(120, 20, 20);
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count{
+        width: 40px;
+    height: 30px;
+    background-color: rgb(5, 4, 73);
+    border-radius: 5px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
