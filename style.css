@@ -7,15 +7,26 @@ body {
 #card {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 25px;
-  padding: 30px;
+  gap: 30px;
+  padding: 35px;
+}
+
+.card-item:hover{
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .card {
-  background: #1e293b;
+  background: #EFD2B0;
   border-radius: 18px;
   padding: 18px;
-  color: #fff;
+  color: #0d0231;
+  box-shadow: 0px 10px 10px rgb(50, 31, 54);
+    transition: 0.5s;
+}
+
+.card:hover{
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
 }
 
 .card img {
@@ -49,12 +60,12 @@ body {
   margin: 20px;
 }
 .swiper-slide {
-  background: #020617;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden; 
+  border: solid 30px rgb(35, 35, 35);
 }
 .swiper-slide img {
-  height: 500px;
+  height: 520px;
   width: 100%;
   object-fit: cover;
 }
@@ -124,8 +135,8 @@ body {
   
 
   .headerslide{
-  height: 100px;
-  background: linear-gradient(rgb(39, 60, 177), rgba(255, 255, 255, 0.762), rgb(39, 60, 177));
+  height: 50px;
+  background: linear-gradient(#cbc1b5, rgba(232, 173, 63, 0.762), #cbc1b5);
   border: solid 2px rgb(255, 255, 255);
   border-radius: 5px;
   display: flex;
@@ -142,41 +153,64 @@ body {
   }
 
   .navlink{
-    display: inline;
     color: #020617;
-    margin-top: 45px;
+    margin-top: 20px;
     margin-right: 200px;
+    text-decoration: none;
   }
 
   .localstorage{
-    background: linear-gradient(rgb(7, 7, 114),     rgb(7, 7, 114) );
+    background: #FFC570;
     border-radius: 10px;
     border:none; 
-    ;
+    
     width: 300px;
     height: 50px;
     font-family:Arial, sans-serif;
     font-size: 30px;
     color: #717171;
-
+    transition: 0.4s;
   }
 
   .localstorage:hover{
-    background: linear-gradient(rgb(7, 7, 114),  rgb(0, 0, 255),  rgb(102, 0, 255));
+    background: #FFDE42;
   }
 
   body {
-  background: linear-gradient(-45deg, #002fff, #ffffff, #0040ff, #04ff53);
-  background-size: 400% 400%;
-  animation: gradientBG 5s ease infinite;
-
-}
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+    background-color:#F2EAE0;
 }
 
 
 
 
+.search{
+  width: 200px;
+  height: 30px;
+  border: 2px solid black;
+  padding: 1px 0 0 48px;
+  font-size: 22px;
+  color: blue;
+  background-repeat: no-repeat;
+  outline: 0;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 400px;
+}
+
+
+.Imgsearch{
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: 1175px;
+}
+
+
+.header{
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background-color: #F2EAE0;
+  z-index: 100;
+}

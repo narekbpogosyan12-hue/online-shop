@@ -16,6 +16,7 @@ function renderProducts(products) {
     return;
   }
 
+  
   products.forEach(elem => {
     card.innerHTML += `
       <div class="card">
@@ -74,12 +75,8 @@ new Swiper(".mySwiper", {
 });
 
 
-// function handleAddProduqts(id) {
-//   let prod = allProducts.find(elem => elem.id)
-//   let loqalData = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : []
-//   loqalData.push(products)
-//   localStorage.setItem('cart', JSON.stringify(loqalData))
-// }
+
+
 function handleAddProduct(id) {
 
   let product = allProducts.find(elem => elem.id == id);
@@ -101,24 +98,24 @@ function handleAddProduct(id) {
 
 cartProductsDiv.innerHTML = "";
 
-cart.forEach(product => {
-  cartProductsDiv.innerHTML += `
-    <div class="nkarneriDiver2">
-      <img src="${product.image}" class="himnakanPicturNer2">
-    
-      <p class="text14-2 text15-2">
-        ${product.title}  x${product.count}
-      </p>
 
-      <p class="text14-2 text17-2">
-        ${product.price * product.count}$
-        <span class="gniKoxiBary2">${product.category}</span>
-      </p>
 
-      <img src="3917759.png" class="delete1">
-    </div>`;
-});
+rendrCart()
+
 }
 
+let searchContenier = document.querySelector(".search");
+
+searchContenier.addEventListener("input", function (e) {
+  let value = e.target.value;
+
+
+
+  let filtered = allProducts.filter(product => product.category.includes(value) || product.title.includes(value));
+
+  renderProducts(filtered);
+
+
+});
 
 
