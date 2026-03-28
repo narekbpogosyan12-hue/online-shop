@@ -69,13 +69,20 @@ function rendrCart() {
         <p class="text14-2 text15-2">${product.title} </p>
         <p class="text14-2 text17-2">${product.price * product.count}$
         <span class="gniKoxiBary2">${product.category}</span>
-        <button class="Clear" onclick="clearCart(${product.id})">  <svg viewBox="0 0 448 512" class="svgIcon"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path></svg>
-        </button>
+<button class="Clear" onclick="clearCart(${product.id})"
+>
+  <svg viewBox="0 0 448 512" class="svgIcon">
+    <path d="M135.2 17.7C140.6 7.4 151.5 0 163.8 0H284.2c12.3 0 23.2 7.4 28.6 17.7L328 32H432c8.8 0 16 7.2 16 16s-7.2 
+    16-16 16H16C7.2 64 0 56.8 0 48s7.2-16 16-16H120l15.2-14.3zM53.2 
+    467c1.6 25.6 22.9 45 48.6 45H346.2c25.7 0 47-19.4 48.6-45L416 
+    128H32l21.2 339z"/>
+  </svg>
+</button>     
         </p>
         
       </div>`});
 }
-
+onclick="clearCart(${product.id})"
 rendrCart()
 
 function clearCart(id) {
